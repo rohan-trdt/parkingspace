@@ -1,0 +1,29 @@
+Python 3.6+
+Libraries:
+numpy
+opencv-python
+twilio
+mask-rcnn from matterport repo.
+COCO pre-trained weights
+Twilio Account for text message notification
+
+Clone 
+git clone https://github.com/your_username/parking-space-detection.git
+cd parking-space-detection
+Install the python packages:
+pip install numpy opencv-python twilio
+pip install git+https://github.com/matterport/Mask_RCNN.git
+
+Need these details from Twilio Account: 
+twilio_account_sid
+twilio_auth_token
+twilio_phone_number
+destination_phone_number
+
+
+To run the project:
+Ensure the video file parking.mp4 is placed in the correct directory.
+To use webcam video use VIDEO_SOURCE = 0
+python parkingalert.py
+To exit the Script:
+Press 'q' to exit the display window.
